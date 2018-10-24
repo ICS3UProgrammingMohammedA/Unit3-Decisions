@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{441DA22C-4A31-421A-9802-35DD7B8D9DDD}</ProjectGuid>
+    <ProjectGuid>{0D0E3DF3-3A68-4579-859B-9E43CD087FDA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RockPaperScissorsMo</RootNamespace>
-    <AssemblyName>RockPaperScissorsMo</AssemblyName>
+    <RootNamespace>PerfectSquaresMo</RootNamespace>
+    <AssemblyName>PerfectSquaresMo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,14 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RockPaperScissorsForm.cs">
+    <Compile Include="PerfectSquaresForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RockPaperScissorsForm.Designer.cs">
-      <DependentUpon>RockPaperScissorsForm.cs</DependentUpon>
+    <Compile Include="PerfectSquaresForm.Designer.cs">
+      <DependentUpon>PerfectSquaresForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="RockPaperScissors.cs" />
+    <Compile Include="PerfectSquares.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PerfectSquaresForm.resx">
+      <DependentUpon>PerfectSquaresForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,11 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RockPaperScissorsForm.resx">
-      <DependentUpon>RockPaperScissorsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,12 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Rock paper Scissors.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\unnamed.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

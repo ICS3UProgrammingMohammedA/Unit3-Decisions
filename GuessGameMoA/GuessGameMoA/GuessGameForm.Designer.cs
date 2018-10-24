@@ -32,6 +32,7 @@
             this.txtGuessNumber = new System.Windows.Forms.TextBox();
             this.btnCheck = new System.Windows.Forms.Button();
             this.lblCorrectGuess = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblQuestion
@@ -66,11 +67,22 @@
             // 
             this.lblCorrectGuess.AutoSize = true;
             this.lblCorrectGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrectGuess.Location = new System.Drawing.Point(250, 149);
+            this.lblCorrectGuess.Location = new System.Drawing.Point(180, 149);
             this.lblCorrectGuess.Name = "lblCorrectGuess";
-            this.lblCorrectGuess.Size = new System.Drawing.Size(167, 29);
+            this.lblCorrectGuess.Size = new System.Drawing.Size(93, 29);
             this.lblCorrectGuess.TabIndex = 3;
-            this.lblCorrectGuess.Text = "Correct Guess";
+            this.lblCorrectGuess.Text = "Answer";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(417, 270);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(76, 38);
+            this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // GuessGameForm
             // 
@@ -78,6 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(505, 320);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.lblCorrectGuess);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.txtGuessNumber);
@@ -85,6 +98,7 @@
             this.Name = "GuessGameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Number Guessing Game Mo";
+            this.Load += new System.EventHandler(this.GuessGameForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -96,6 +110,7 @@
         private System.Windows.Forms.TextBox txtGuessNumber;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Label lblCorrectGuess;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }
 
