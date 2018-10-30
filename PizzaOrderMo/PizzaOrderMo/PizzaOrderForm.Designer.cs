@@ -51,7 +51,7 @@
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(703, 323);
+            this.btnCalculate.Location = new System.Drawing.Point(703, 320);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(199, 39);
             this.btnCalculate.TabIndex = 0;
@@ -193,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 374);
+            this.ClientSize = new System.Drawing.Size(914, 371);
             this.Controls.Add(this.lblTotalAnswer);
             this.Controls.Add(this.lblHSTAnswer);
             this.Controls.Add(this.lblSubtotalAnswer);

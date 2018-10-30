@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WalkingManMoA.Properties
+namespace WlakingManMo.Properties
 {
 
 

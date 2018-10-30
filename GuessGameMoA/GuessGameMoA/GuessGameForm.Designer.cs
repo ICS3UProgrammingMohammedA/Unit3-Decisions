@@ -67,7 +67,7 @@
             // 
             this.lblCorrectGuess.AutoSize = true;
             this.lblCorrectGuess.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrectGuess.Location = new System.Drawing.Point(180, 149);
+            this.lblCorrectGuess.Location = new System.Drawing.Point(152, 149);
             this.lblCorrectGuess.Name = "lblCorrectGuess";
             this.lblCorrectGuess.Size = new System.Drawing.Size(93, 29);
             this.lblCorrectGuess.TabIndex = 3;
