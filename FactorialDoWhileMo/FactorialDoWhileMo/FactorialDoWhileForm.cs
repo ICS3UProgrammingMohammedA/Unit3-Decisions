@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FactorialDoWhileMo
 {
-    public partial class Form1 : Form
+    public partial class frmFactorialDoWhile : Form
     {
-        public Form1()
+        public frmFactorialDoWhile()
         {
             InitializeComponent();
         }
