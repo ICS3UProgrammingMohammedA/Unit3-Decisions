@@ -1,8 +1,8 @@
 ﻿/*
  * Created by: Mohammed 
- * Created on: Day-Month-Year2018-10-11 ICS3U Programming
+ * Created on: 2018-10-11 ICS3U Programming
  * Daily Assignment – Day #17 - Name of Program
- * This program...
+ * This program generates a random number
 */
 
 
