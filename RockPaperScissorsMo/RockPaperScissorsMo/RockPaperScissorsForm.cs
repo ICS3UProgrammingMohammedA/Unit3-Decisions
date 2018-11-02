@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Mohammed Alnajeh
+ * Created on: 2018-11-02
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #18 - Rock, Paper, Scissors
+ * This program...
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,19 +45,22 @@ namespace RockPaperScissorsMo
             //get the user's selcetion, if there is no selection set it to 0
             if (radRock.Checked == true)
             {
-                playerChoice = ROCK;
+                computerChoice = ROCK;
+                lblScore.Text = "DRAW";
             }
             else if (radPaper.Checked == true)
             {
-                playerChoice = PAPER;
+                computerChoice = PAPER;
+                lblScore.Text = "Computer wins";
             }
             else if (radScissors.Checked == true)
             {
-                playerChoice = SCISSORS;
+                computerChoice = SCISSORS;
+                lblScore.Text = "Player wins";
             }
             else
             {
-                playerChoice = 0;
+                computerChoice = 0;
             }
 
             //Randomly generate a number between 1 and 3, Representing ROCK, PAPER or SCISSORS
@@ -59,17 +70,27 @@ namespace RockPaperScissorsMo
             if (computerChoice == ROCK)
             {
                 this.radRockComp.Checked = true;
+                
             }
             else if (computerChoice == PAPER)
             {
                 this.radPaperComp.Checked = true;
+                
             }
-            computerChoice = SCISSORS;
+            else if (computerChoice == SCISSORS) 
+            {
+                this.radScissorsComp.Checked = true;
+                
+            }
 
-        }   
+            lblScore.Show();
 
+        }
 
-
+        private void frmRockPaperScissors_Load(object sender, EventArgs e)
+        {
+            lblScore.Hide();
+        }
     }
 
 }

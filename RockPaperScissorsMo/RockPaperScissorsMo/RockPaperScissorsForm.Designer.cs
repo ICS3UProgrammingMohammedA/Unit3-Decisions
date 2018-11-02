@@ -171,6 +171,7 @@
             this.Controls.Add(this.grbPlayer);
             this.Name = "frmRockPaperScissors";
             this.Text = "Rock, Paper, Scissors By Mohammed";
+            this.Load += new System.EventHandler(this.frmRockPaperScissors_Load);
             this.grbPlayer.ResumeLayout(false);
             this.grbPlayer.PerformLayout();
             this.grbComputersChoice.ResumeLayout(false);

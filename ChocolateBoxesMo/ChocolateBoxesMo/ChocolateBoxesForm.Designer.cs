@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChocolateBoxes));
             this.lblEnter = new System.Windows.Forms.Label();
-            this.txtNumberBoxes = new System.Windows.Forms.TextBox();
             this.btnGetReward = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblReward = new System.Windows.Forms.Label();
+            this.txtNumbers = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,13 +47,6 @@
             this.lblEnter.TabIndex = 0;
             this.lblEnter.Text = "Enter the number of boxes sold";
             // 
-            // txtNumberBoxes
-            // 
-            this.txtNumberBoxes.Location = new System.Drawing.Point(330, 78);
-            this.txtNumberBoxes.Name = "txtNumberBoxes";
-            this.txtNumberBoxes.Size = new System.Drawing.Size(100, 20);
-            this.txtNumberBoxes.TabIndex = 1;
-            // 
             // btnGetReward
             // 
             this.btnGetReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -62,6 +56,7 @@
             this.btnGetReward.TabIndex = 2;
             this.btnGetReward.Text = "Get Reward";
             this.btnGetReward.UseVisualStyleBackColor = true;
+            this.btnGetReward.Click += new System.EventHandler(this.btnGetReward_Click);
             // 
             // pictureBox1
             // 
@@ -73,12 +68,30 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // lblReward
+            // 
+            this.lblReward.AutoSize = true;
+            this.lblReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReward.Location = new System.Drawing.Point(38, 176);
+            this.lblReward.Name = "lblReward";
+            this.lblReward.Size = new System.Drawing.Size(21, 24);
+            this.lblReward.TabIndex = 4;
+            this.lblReward.Text = "?";
+            // 
+            // txtNumbers
+            // 
+            this.txtNumbers.Location = new System.Drawing.Point(310, 79);
+            this.txtNumbers.Name = "txtNumbers";
+            this.txtNumbers.Size = new System.Drawing.Size(100, 20);
+            this.txtNumbers.TabIndex = 6;
+            // 
             // frmChocolateBoxes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 301);
-            this.Controls.Add(this.txtNumberBoxes);
+            this.Controls.Add(this.txtNumbers);
+            this.Controls.Add(this.lblReward);
             this.Controls.Add(this.btnGetReward);
             this.Controls.Add(this.lblEnter);
             this.Controls.Add(this.pictureBox1);
@@ -93,9 +106,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblEnter;
-        private System.Windows.Forms.TextBox txtNumberBoxes;
         private System.Windows.Forms.Button btnGetReward;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblReward;
+        private System.Windows.Forms.TextBox txtNumbers;
     }
 }
 
