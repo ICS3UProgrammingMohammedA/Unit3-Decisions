@@ -68,16 +68,19 @@ namespace WlakingManMo
                 {
                     this.picMan.Image = Properties.Resources.walk10;
                 }
-                
+                    //refresh the form. this MUST be done, otherwise the picture won't get updated!
+                    this.Refresh();
+                    //pause the loop for 100 milliseconds
+                    Thread.Sleep(100);
+                    pictureFrameCounter = pictureFrameCounter + 1;
             }
 
-            pictureFrameCounter = pictureFrameCounter + 1;
+            
 
-            //refresh the form. this MUST be done, otherwise the picture won't get updated!
-            this.Refresh();
 
-            //pause the loop for 100 milliseconds
-            Thread.Sleep(100);
+
+            
+
 
 
         }
