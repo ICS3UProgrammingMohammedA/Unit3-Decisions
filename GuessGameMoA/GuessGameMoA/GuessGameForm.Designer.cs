@@ -55,7 +55,7 @@
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(32, 143);
+            this.btnCheck.Location = new System.Drawing.Point(17, 143);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(114, 46);
             this.btnCheck.TabIndex = 2;

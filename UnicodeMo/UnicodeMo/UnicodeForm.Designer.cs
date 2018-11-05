@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picUNICODE = new System.Windows.Forms.PictureBox();
             this.mnuMenu = new System.Windows.Forms.MenuStrip();
             this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
             this.btnStart = new System.Windows.Forms.Button();
             this.lstNumbers = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUNICODE)).BeginInit();
             this.mnuMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // picUNICODE
             // 
-            this.pictureBox1.Image = global::UnicodeMo.Properties.Resources.images;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(226, 227);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picUNICODE.Image = global::UnicodeMo.Properties.Resources.images;
+            this.picUNICODE.Location = new System.Drawing.Point(0, 27);
+            this.picUNICODE.Name = "picUNICODE";
+            this.picUNICODE.Size = new System.Drawing.Size(226, 227);
+            this.picUNICODE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUNICODE.TabIndex = 0;
+            this.picUNICODE.TabStop = false;
             // 
             // mnuMenu
             // 
@@ -69,7 +69,7 @@
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Size = new System.Drawing.Size(92, 22);
             this.mniExit.Text = "Exit";
             this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
@@ -102,12 +102,12 @@
             this.ClientSize = new System.Drawing.Size(574, 405);
             this.Controls.Add(this.lstNumbers);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picUNICODE);
             this.Controls.Add(this.mnuMenu);
             this.MainMenuStrip = this.mnuMenu;
             this.Name = "frmUnicode";
             this.Text = "Unicode By Mohammed";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUNICODE)).EndInit();
             this.mnuMenu.ResumeLayout(false);
             this.mnuMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -117,7 +117,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picUNICODE;
         private System.Windows.Forms.MenuStrip mnuMenu;
         private System.Windows.Forms.ToolStripMenuItem mniFile;
         private System.Windows.Forms.ToolStripMenuItem mniExit;
