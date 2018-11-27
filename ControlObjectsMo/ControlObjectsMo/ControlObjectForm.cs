@@ -20,7 +20,10 @@ namespace ControlObjectsMo
         private void frmControlObject_Load(object sender, EventArgs e)
         {
             //loop through each object on the form and make it red
-            //foreach (Control )
+            foreach (aControlObject in this.Controls)
+            {
+                ControlObject.BackColor = Color.Green;
+            }          
         }
     }
 }

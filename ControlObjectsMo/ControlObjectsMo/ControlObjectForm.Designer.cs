@@ -36,7 +36,7 @@
             // btnRed
             // 
             this.btnRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRed.Location = new System.Drawing.Point(33, 87);
+            this.btnRed.Location = new System.Drawing.Point(57, 94);
             this.btnRed.Name = "btnRed";
             this.btnRed.Size = new System.Drawing.Size(231, 38);
             this.btnRed.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             this.lblBlack.AutoSize = true;
             this.lblBlack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlack.Location = new System.Drawing.Point(80, 146);
+            this.lblBlack.Location = new System.Drawing.Point(97, 151);
             this.lblBlack.Name = "lblBlack";
             this.lblBlack.Size = new System.Drawing.Size(165, 20);
             this.lblBlack.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             this.btnGreen.AutoSize = true;
             this.btnGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGreen.Location = new System.Drawing.Point(80, 203);
+            this.btnGreen.Location = new System.Drawing.Point(80, 191);
             this.btnGreen.Name = "btnGreen";
             this.btnGreen.Size = new System.Drawing.Size(182, 20);
             this.btnGreen.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 354);
+            this.ClientSize = new System.Drawing.Size(379, 323);
             this.Controls.Add(this.btnGreen);
             this.Controls.Add(this.lblBlack);
             this.Controls.Add(this.btnRed);
