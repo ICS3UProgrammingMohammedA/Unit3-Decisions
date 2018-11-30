@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Created by: Mohammed Alnajeh
+ * Created on: 2018-11-30
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #28 - Numbers Nested Loops
+ * This program...
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,21 +28,22 @@ namespace NestedLoopsMo
         private void btnStart_Click(object sender, EventArgs e)
         {
             //declare local variables
-            int CAPalphabets = 65;
-            int Smallalphabets = 97;
-            int Alphabetscounter=0;
-            string alphabets;
+            const int UNICODE_CAPS = 90, UNICODE_LOW = 122;
+            int unicode_counter_caps, unicode_counter_low;
+            string characterBig, charactersmall;
 
             //clear listbox
             this.lstAlphabets.Items.Clear();
 
-            for (Alphabetscounter = 65; Alphabetscounter <= CAPalphabets; Alphabetscounter++)
+            for (unicode_counter_caps = 65; unicode_counter_caps <= UNICODE_CAPS;  unicode_counter_caps++)
             {
-                for (Alphabetscounter = 97; Alphabetscounter <= Smallalphabets; Alphabetscounter++)
+                for (unicode_counter_low = 97; unicode_counter_low <= UNICODE_LOW; unicode_counter_low++)
                 {
-                   alphabets = char.ConvertFromUtf32(Alphabetscounter);
+                   characterBig = char.ConvertFromUtf32(unicode_counter_caps);
 
-                    this.lstAlphabets.Items.Add(CAPalphabets + " -> " + Smallalphabets);
+                    charactersmall = char.ConvertFromUtf32(unicode_counter_low);
+
+                    this.lstAlphabets.Items.Add(characterBig + " -> " + charactersmall);
                     
                 }
             }
