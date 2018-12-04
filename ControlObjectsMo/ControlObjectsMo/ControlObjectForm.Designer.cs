@@ -30,7 +30,6 @@
         {
             this.btnRed = new System.Windows.Forms.Button();
             this.lblBlack = new System.Windows.Forms.Label();
-            this.btnGreen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRed
@@ -42,6 +41,7 @@
             this.btnRed.TabIndex = 0;
             this.btnRed.Text = "Click here to change the color";
             this.btnRed.UseVisualStyleBackColor = true;
+            this.btnRed.Click += new System.EventHandler(this.btnRed_Click);
             // 
             // lblBlack
             // 
@@ -52,28 +52,17 @@
             this.lblBlack.Size = new System.Drawing.Size(165, 20);
             this.lblBlack.TabIndex = 1;
             this.lblBlack.Text = "Click To Change Color";
-            // 
-            // btnGreen
-            // 
-            this.btnGreen.AutoSize = true;
-            this.btnGreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGreen.Location = new System.Drawing.Point(80, 191);
-            this.btnGreen.Name = "btnGreen";
-            this.btnGreen.Size = new System.Drawing.Size(182, 20);
-            this.btnGreen.TabIndex = 2;
-            this.btnGreen.Text = "Click to change the color";
+            this.lblBlack.Click += new System.EventHandler(this.lblBlack_Click);
             // 
             // frmControlObject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 323);
-            this.Controls.Add(this.btnGreen);
             this.Controls.Add(this.lblBlack);
             this.Controls.Add(this.btnRed);
             this.Name = "frmControlObject";
             this.Text = "Control Object By Mohammed";
-            this.Load += new System.EventHandler(this.frmControlObject_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,7 +72,6 @@
 
         private System.Windows.Forms.Button btnRed;
         private System.Windows.Forms.Label lblBlack;
-        private System.Windows.Forms.Label btnGreen;
     }
 }
 

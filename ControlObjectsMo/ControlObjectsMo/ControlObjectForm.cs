@@ -17,13 +17,26 @@ namespace ControlObjectsMo
             InitializeComponent();
         }
 
-        private void frmControlObject_Load(object sender, EventArgs e)
+        private void btnRed_Click(object sender, EventArgs e)
         {
-            //loop through each object on the form and make it red
-            foreach (aControlObject in this.Controls)
+            foreach (Control Control in this.Controls)
             {
-                ControlObject.BackColor = Color.Green;
-            }          
+                if (Control.GetType() == typeof(Label))
+                {
+                    Control.BackColor = Color.Red;
+                    Control.BackColor = Color.Black;
+                }
+                
+            }
+        }
+
+        private void lblBlack_Click(object sender, EventArgs e)
+        {
+            //if (Control.GetType() == typeof(Button))
+            {
+                //Control.BackColor = Color.Black;
+                //Control.BackColor = Color.Black;
+            }
         }
     }
 }
