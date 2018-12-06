@@ -35,7 +35,7 @@
             // btnGetAverage
             // 
             this.btnGetAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGetAverage.Location = new System.Drawing.Point(195, 81);
+            this.btnGetAverage.Location = new System.Drawing.Point(185, 35);
             this.btnGetAverage.Name = "btnGetAverage";
             this.btnGetAverage.Size = new System.Drawing.Size(96, 39);
             this.btnGetAverage.TabIndex = 0;
@@ -45,7 +45,7 @@
             // lstMarks
             // 
             this.lstMarks.FormattingEnabled = true;
-            this.lstMarks.Location = new System.Drawing.Point(140, 157);
+            this.lstMarks.Location = new System.Drawing.Point(129, 116);
             this.lstMarks.Name = "lstMarks";
             this.lstMarks.Size = new System.Drawing.Size(203, 147);
             this.lstMarks.TabIndex = 1;
